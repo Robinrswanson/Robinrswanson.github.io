@@ -1,35 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Robin Swanson's Portfolio</title>
-  </head>
-  <body>
-    <header>
+    <head>
+        <meta charset="utf-8">
+        <title>Robin Swanson's Portfolio</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
         <nav>
-            <h5 class="logo"> Robin Swanson</h5>
-            <ul>
-                <li><h5>Home</h5></li>
-                <li><h5>About</h5></li>
-                <li><h5>Skills</h5></li>
-                <li><h5>Projects</h5></li>
-            </ul>
+            <div class="nav-container">
+                <a href="index.html" class="navbar-brand">RRS.dev</a>
+                <div class="links">
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#portfolio" class="nav-item">Portfolio</a>
+                    <a href="#contact" class="nav-item">Contact</a>
+                </div>
+            </div>
         </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-grid">
-        <div style="width: 100%; grid-column: span 8;">
-        <h2>Hello, my name is </h2>
-        <h1><span class="action-text">Robin Swanson!</span></h1>
-        <button class="hero-button"><h5>About Me</h5></button>
+        <!-- Nav Bar End -->
+
+        <!-- Hero Start -->
+        <section class="hero" id="home">
+            <div class="grid-container">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <p>Welcome! My name is</p>
+                  <h1>Robin Swanson</h1>
+                  <h2></h2>
+                  <div class="typed-text">Web Designer, Web Developer, Front End Developer, Back End Developer, Fullstack Developer</div>
+                  </div>
+                  <div class="hero-btn">
+                    <a class="btn" href="#contact">Contact Me</a>
+                  </div>
+                </div>
+              <div class="hero-image">
+                <img src="img/hero.png" alt="Hero Image">
+              </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- About Start -->
+        <div class="about" id="about">
+            <div class="grid-container">
+                        <div class="about-img">
+                            <img src="img/about.jpg" alt="Image">
+                        </div>
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About Me</p>
+                                <h2>Living life to the fullest.</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                  I am Robin Swanson, a Toronto-based individual born in Vancouver with a half-Japanese background. I am passionate about soccer and hold a second-degree black belt in Taekwondo, showcasing my athleticism and dedication. Bouldering is another adventure I enjoy, while my love for manga, cooking, and watching sports adds a creative and entertaining dimension to my life. With a vibrant personality and diverse interests, I embrace new challenges and experiences with enthusiasm and a zest for life.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img class="hero-photo" src="images/herophoto.jpg">
-        </div>
-    </section>
-    <section class="about">
+        <!-- About End -->
+
+        <!-- Skills -->
+
+        <!-- Skills End -->
         
-    </section>
-  </body>
+        <!-- Experience Start -->
+        <!-- Experience End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+          <div>
+            <div class="section-header">
+              <p>Projects</p>
+              <h2>My Portfolio</h2>
+            </div>
+              <div class="grid-container">
+              <div class="card">
+                <img class="card-img" src='img/portfolio-1.jpg' alt="Stop-Procrastinating">
+                <div class="card-body">
+                  <div>
+                  <h3 class="card-title">Stop Procrastinating</h3>
+                  <p class="card-text">
+                    Stop Procrastinating is a web application designed to help users manage their tasks and overcome procrastination. The app utilizes Express, Node.js, MongoDB, and React to provide an efficient and user-friendly task management experience. With Stop Procrastinating, users can organize their tasks, set reminders, and stay motivated to complete their work on time.
+                  </p>
+                </div>
+                  <div class="card-footer">
+                    <a href="https://stopprocrastinating.vercel.app/" target="_blank">
+                    <button class="btn">
+                      Visit
+                    </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img" src='img/portfolio-2.jpg' alt="UTJA">
+                <div class="card-body">
+                  <div>
+                  <h3 class="card-title">UTJA Website</h3>
+                  <p class="card-text">
+                    
+I developed a website for my club, UTJA, using a combination of HTML and CSS. To ensure a well-structured and responsive design, I implemented a 12-column grid system, which allowed me to arrange and align content effectively for the user interface. Additionally, I integrated JavaScript to enhance the user experience, making the website more interactive and engaging for visitors.
+                  </p>
+                </div>
+                  <div class="card-footer">
+                    <a href="https://uoftja.github.io/" target="_blank">
+                    <button class="btn">
+                      Visit
+                    </button>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img" src='img/portfolio-3.jpg' alt="Stop-Procrastinating">
+                <div class="card-body">
+                  <div>
+                  <h3 class="card-title">Youtube Clone</h3>
+                  <p class="card-text">
+                    This YouTube clone project is a website that imitates the appearance of the YouTube homepage. It was built using HTML and CSS, and it uses grid and flexbox layouts to arrange the page's elements, such as video previews and text, in a way that closely resembles the real YouTube homepage. This project aims to replicate the familiar YouTube experience, offering users a visually similar and user-friendly interface for browsing and viewing content.                  </p>
+                </div>
+                  <div class="card-footer">
+                    <a href="https://htmlpreview.github.io/?https://github.com/Robinrswanson/YouTubeClone/blob/main/youtube.html" target="_blank">
+                    <button class="btn">
+                      Visit
+                    </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Footer Start -->
+        <div class="footer" id="contact">
+            <div class="footer-info">
+                  <h2>Robin Swanson</h2>
+                  <h3>Toronto, ON</h3>
+                <div class="footer-menu">
+                  <p>778-893-1276</p>
+                  <p>robin@swanson.nu</p>
+                </div>
+                <div class="footer-social">
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+          </div>
+        <!-- Footer End -->
+        
+        <!-- Back to top button -->
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
